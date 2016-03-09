@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<title>DHSurprisexp</title>
+</head>
+<body>
+<nav class="navbar navbar-default navar-static-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="/">
+				DHSurprisexp
+			</a>
+		</div>
+		<ul class="nav navbar-nav navbar-right">
+			<li>
+				<a href="{{url|safe}}">{{signinstatus}}</a>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" aria-expanded="false" role="button" data-toggle="dropdown" href="#">
+					Events <span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="kaleidoscope">Kaleidoscope</a></li>
+					<li><a href="aprilfools">April Fools'</a></li>
+					<li><a href="teachersday">Teachers' Day</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</nav>
+<h2>Teachers' Day</h2>
+<form action="/submittform" method="post">
+	<p class="input-group">
+		<input name='content' type="text" class="form-control" placeholder="E.g. Hello, I'm (name, student/alumni) and I was thinking (idea)" ></input>
+		<span class="input-group-btn">
+			<button type="submit" class="btn btn-default">Submit</button>
+		</span>
+    </p>
+</form>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+<head>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<title>DHSurprisexp</title>
+</head>
+<body>
+<nav class="navbar navbar-default navar-static-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="/">
+				DHSurprisexp
+			</a>
+		</div>
+		<ul class="nav navbar-nav navbar-right">
+			<li>
+				<a href="{{url|safe}}">{{url_linktext}}</a>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" aria-expanded="false" role="button" data-toggle="dropdown" href="#">
+					Events <span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="kaleidoscope">Kaleidoscope</a></li>
+					<li><a href="aprilfools">April Fools'</a></li>
+					<li><a href="teachersday">Teachers' Day</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<div class="container">
+	<div class="jumbotron">
+        <a href="http://www.dunmanhigh.moe.edu.sg/">
+		    <img style="height:100%; width:100%" src="http://www.archsingapore.com.sg/wp-content/gallery/2d-art/dunman-high-school-classic-c.jpg"/>
+        </a>
+		<div>
+			<h2>JOIN</h2>
+			<h3>connect with your friends and alumni</h3>
+			<h2>SHARE</h2>
+			<h3>your experiences and ideas</h3>
+			<h2>PLAN</h2>
+			<h3>surprises to let them know how special they are</h3>
+		</div>
+	</div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+{% endautoescape %}
