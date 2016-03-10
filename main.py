@@ -112,9 +112,9 @@ class Kaleidoscope(webapp2.RequestHandler):
                     self.response.write(
                             """<div class="comment"><p><strong>%s </strong> wrote:%s</p>""" % (
                             i.author.email, i.content))
-            else:
-                self.response.write(
-                        """<div class="comment"><p><strong>%s </strong> wrote:%s</p>""" % ('Anonymous', i.content))
+                else:
+                    self.response.write(
+                            """<div class="comment"><p><strong>%s </strong> wrote:%s</p>""" % ('Anonymous', i.content))
         self.response.write("""</div></body></html>""")
 
 
@@ -156,9 +156,9 @@ class April(webapp2.RequestHandler):
                     self.response.write(
                             """<div class="comment"><p><strong>%s </strong> wrote:%s</p>""" % (
                             i.author.email, i.content))
-            else:
-                self.response.write(
-                        """<div class="comment"><p><strong>%s </strong> wrote:%s</p>""" % ('Anonymous', i.content))
+                else:
+                    self.response.write(
+                            """<div class="comment"><p><strong>%s </strong> wrote:%s</p>""" % ('Anonymous', i.content))
         self.response.write("""</div></body></html>""")
 
 
@@ -200,9 +200,9 @@ class Teachers(webapp2.RequestHandler):
                     self.response.write(
                             """<div class="comment"><p><strong>%s </strong> wrote:%s</p>""" % (
                             i.author.email, i.content))
-            else:
-                self.response.write(
-                        """<div class="comment"><p><strong>%s </strong> wrote:%s</p>""" % ('Anonymous', i.content))
+                else:
+                    self.response.write(
+                            """<div class="comment"><p><strong>%s </strong> wrote:%s</p>""" % ('Anonymous', i.content))
         self.response.write("""</div></body></html>""")
 
 
